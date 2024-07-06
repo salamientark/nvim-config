@@ -17,4 +17,21 @@ vim.opt.numberwidth = 4			-- set number column width to 2 {default 4}
 vim.opt.relativenumber = true		-- set relative numbered lines
 vim.opt.pumheight = 10			-- pop up menu height
 vim.opt.scrolloff = 8			-- minimum nbr of line above and below cursor 
+vim.opt.sidescrolloff = 8		-- minimum nbr of columns on left & right of cursor 
 vim.opt.shiftwidth = 4			-- the number of spaces inserted for each indentation
+-- vim.opt.showmode = false		-- disable mode information like -- INSERT --
+vim.opt.showtabline = 2			-- always show tabs
+-- vim.opt.signcolumn = "yes:1"		-- always show the sign column
+vim.opt.smartcase = true		-- smart case
+vim.opt.smartindent = true		-- make indenting smarter again
+vim.opt.splitbelow = true		-- force horizontal splits to go below current window
+vim.opt.splitright = true		-- force vertical splits to go to the right of current window
+vim.opt.swapfile = false		-- creates a swapfile
+vim.opt.termguicolors = true		-- set term gui colors (most terminals support this)
+vim.opt.timeoutlen = 1000		-- time (ms) to wait for a mapped sequence to complete
+vim.opt.undofile = true			-- enable persistent undo
+vim.opt.updatetime = 300		-- faster completion (4000ms default)
+vim.opt.wrap = false			-- display lines as one long line
+vim.opt.writebackup = false		-- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+
+-- vim.opt.shortmess:append "c"		-- Don't know what it does
