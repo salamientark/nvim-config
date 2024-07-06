@@ -1,0 +1,20 @@
+-- :help options
+vim.opt.autoread = true			-- Read again file when changed outside of nvim
+vim.opt.backup = false			-- Create a backup file
+vim.opt.clipboard = "unnamedplus"	-- Allow nvim to access to the system clipboard
+vim.opt.cmdheight = 2			-- More space in neovim cmd line  
+vim.opt.conceallevel = 0		-- so that `` is visible in markdown files
+vim.opt.cursorline = true 		-- highlight the current line
+vim.opt.expandtab = false		-- convert tabs to spaces
+vim.opt.fileencoding = "utf-8"		-- the encoding written to a file
+vim.opt.guifont = "monospace:h17"	-- the font used in graphical neovim applications
+vim.opt.hlsearch = true			-- highlight all matches on previous search pattern
+vim.opt.ignorecase = true		-- ignore case in search patterns
+vim.opt.langmenu = "en_US.UTF-8"	-- Change neovim menu language to english 
+vim.opt.mouse = "a"			-- allow the mouse to be used in neovim
+vim.opt.number = true			-- set numbered lines
+vim.opt.numberwidth = 4			-- set number column width to 2 {default 4}
+vim.opt.relativenumber = true		-- set relative numbered lines
+vim.opt.pumheight = 10			-- pop up menu height
+vim.opt.scrolloff = 8			-- minimum nbr of line above and below cursor 
+vim.opt.shiftwidth = 4			-- the number of spaces inserted for each indentation
