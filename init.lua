@@ -8,8 +8,9 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})	-- nvim-treesitter
-
 Plug ("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
+Plug ("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
+Plug ('numToStr/Comment.nvim') -- Fast comment
 
 -- COLOR SCHEME 
 Plug ('nordtheme/vim')				-- Nord
@@ -53,6 +54,8 @@ require "plugin.treesitter"
 require "plugin.cmp"
 require "telescope"
 require "plugin.nvim-tree"
+require "plugin.autopairs"
+require "plugin.comment"
 
 -- LOAD LSP
 require "plugin.lsp"
