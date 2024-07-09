@@ -1,14 +1,10 @@
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 local vim = vim
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
-Plug ('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})	-- nvim-treesitter
 Plug ("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
+Plug ('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})	-- nvim-treesitter
 Plug ("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 Plug ('numToStr/Comment.nvim') -- Fast comment
 
@@ -36,7 +32,7 @@ Plug ('L3MON4D3/LuaSnip', {['tag'] = 'v2.*', ['do'] = 'make install_jsregexp'})
 Plug ('rafamadriz/friendly-snippets')	-- Add tons of snippets
 
 -- Telescope
-Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
+-- Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
 
 -- Nvim-tree
 Plug ('nvim-tree/nvim-web-devicons') -- optional
@@ -52,7 +48,7 @@ require "config.keymaps"
 -- LOAD PLUGINS
 require "plugin.treesitter"
 require "plugin.cmp"
-require "telescope"
+-- require "plugin.telescope"
 require "plugin.nvim-tree"
 require "plugin.autopairs"
 require "plugin.comment"
