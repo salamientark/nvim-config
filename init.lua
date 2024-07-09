@@ -1,3 +1,7 @@
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local vim = vim
 local Plug = vim.fn['plug#']
 
@@ -33,6 +37,10 @@ Plug ('rafamadriz/friendly-snippets')	-- Add tons of snippets
 -- Telescope
 Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
 
+-- Nvim-tree
+Plug ('nvim-tree/nvim-web-devicons') -- optional
+Plug ('nvim-tree/nvim-tree.lua')	-- Nvim-tree explorer
+
 vim.call('plug#end')
 
 -- LOAD USER CONFIGURATION
@@ -44,6 +52,7 @@ require "config.keymaps"
 require "plugin.treesitter"
 require "plugin.cmp"
 require "telescope"
+require "plugin.nvim-tree"
 
 -- LOAD LSP
 require "plugin.lsp"
