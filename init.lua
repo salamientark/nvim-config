@@ -32,7 +32,7 @@ Plug ('L3MON4D3/LuaSnip', {['tag'] = 'v2.*', ['do'] = 'make install_jsregexp'})
 Plug ('rafamadriz/friendly-snippets')	-- Add tons of snippets
 
 -- Telescope
--- Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
+Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
 
 -- Nvim-tree
 Plug ('nvim-tree/nvim-web-devicons') -- optional
@@ -48,7 +48,7 @@ require "config.keymaps"
 -- LOAD PLUGINS
 require "plugin.treesitter"
 require "plugin.cmp"
--- require "plugin.telescope"
+require "plugin.telescope"
 require "plugin.nvim-tree"
 require "plugin.autopairs"
 require "plugin.comment"
