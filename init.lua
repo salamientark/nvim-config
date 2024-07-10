@@ -36,7 +36,7 @@ Plug ('jose-elias-alvarez/null-ls.nvim') -- LSP diagnostics and code actions
 
 -- SNIPPET ENGINE
 Plug ('L3MON4D3/LuaSnip', {['tag'] = 'v2.*', ['do'] = 'make install_jsregexp'})
--- Plug ('rafamadriz/friendly-snippets')	-- Add tons of snippets
+Plug ('rafamadriz/friendly-snippets')	-- Add tons of snippets
 
 -- Telescope
 Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
