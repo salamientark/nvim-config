@@ -13,6 +13,12 @@ Plug ('akinsho/bufferline.nvim', { ['tag'] = '*' }) -- Bufferline
 Plug ('nordtheme/vim')				-- Nord
 Plug ('gilgigilgil/anderson.vim')	-- Anderson 
 Plug ('sts10/vim-pink-moon')		-- Pink-moon
+Plug ("scottmckendry/cyberdream.nvim") -- CyberDream colortheme
+Plug ('EdenEast/nightfox.nvim') -- Nightfox
+Plug ('rktjmp/lush.nvim') -- ???
+Plug ('uloco/bluloco.nvim') -- bluloco theme
+Plug ("alexmozaidze/palenight.nvim") -- Palenight
+Plug ('navarasu/onedark.nvim') -- OneDark
 
 -- CODE COMPLETION 
 Plug ('hrsh7th/nvim-cmp')			-- The completion Plugin
@@ -45,6 +51,9 @@ vim.call('plug#end')
 require "config.options"
 require "config.colorscheme"
 require "config.keymaps"
+
+-- LOAD COLORSCHEME
+require "plugin.onedark"
 
 -- LOAD PLUGINS
 require "plugin.treesitter"
