@@ -31,16 +31,16 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Resize window with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 
 -- Move line up and down
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Navigate buffer (like tabs ?)
-keymap("n", "<S-h>", ":bnext<CR>", opts)
-keymap("n", "<S-l>", ":bprev<CR>", opts)
+keymap("n", "<S-h>", ":bprev<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
 
 -- Insert --
 -- Move line up and down
@@ -71,3 +71,5 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+keymap("n", "<leader>bd", ":bn<cr><bar>:bd<cr>", opts)
