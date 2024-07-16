@@ -3,6 +3,8 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
+Plug ("42Paris/42header") -- 42header
+
 Plug ("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})	-- nvim-treesitter
 Plug ("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
