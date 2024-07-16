@@ -1,6 +1,4 @@
-# nvim-config
-NEOVIM configuration
+This is a basic Neovim Configuration made for school 42.
 
-TODO :
-    - Check how to replace space with Tabs when indenting/pressing <Tab>
-        'smarttab' option may be important
+## Notes
+The Copilot pluggin isn't installed by default, you cna add it by simply uncommenting the line <<Plug ('github/copilot.vim')>> in the init.vim file.
