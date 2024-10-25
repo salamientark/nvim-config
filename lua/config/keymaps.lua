@@ -38,10 +38,6 @@ keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
--- Navigate buffer (like tabs ?)
-keymap("n", "<S-h>", ":bprev<CR>", opts)
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-
 -- Insert --
 -- Move line up and down
 keymap("i", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
@@ -67,9 +63,18 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Telescope --
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>bd", ":bn<cr><bar>:bd#<cr>", opts) -- close buffer
 
-keymap("n", "<leader>bd", ":bn<cr><bar>:bd#<cr>", opts)
+
+-- Navigate buffer (like tabs ?)
+keymap("n", "<S-h>", ":bprev<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+
+-- Navigate tabs
+keymap("n", "<C-n>", ":tabnext<CR>", opts);
+keymap("n", "<C-b>", ":tabprevious<CR>", opts);
+

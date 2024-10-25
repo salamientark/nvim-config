@@ -10,7 +10,10 @@ Plug ('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})	-- nvim-treesit
 Plug ("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 Plug ('numToStr/Comment.nvim') -- Fast comment
 Plug ('akinsho/bufferline.nvim', { ['tag'] = '*' }) -- Bufferline
--- Plug ('github/copilot.vim') -- copilot
+Plug ("folke/which-key.nvim") -- Which-key
+Plug ('github/copilot.vim') -- copilot
+-- Plug ('zbirenbaum/copilot.lua') -- Copilot lua
+Plug ('CopilotC-Nvim/CopilotChat.nvim', { ['branch']= 'canary' }) -- Copilot chat
 
 -- COLOR SCHEME 
 Plug ('nordtheme/vim')				-- Nord
@@ -66,6 +69,8 @@ require "plugin.nvim-tree"
 require "plugin.autopairs"
 require "plugin.comment"
 require "plugin.bufferline"
+require "plugin.copilot"
+require "plugin.42Header"
 
 -- LOAD LSP
 require "plugin.lsp"
