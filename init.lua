@@ -51,6 +51,9 @@ Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
 Plug ('nvim-tree/nvim-web-devicons') -- optional
 Plug ('nvim-tree/nvim-tree.lua')	-- Nvim-tree explorer
 
+-- Languiage Specific plugin
+Plug ('MeanderingProgrammer/render-markdown.nvim') -- Markdown visualizer
+
 vim.call('plug#end')
 
 -- LOAD USER CONFIGURATION
@@ -74,3 +77,6 @@ require "plugin.42Header"
 
 -- LOAD LSP
 require "plugin.lsp"
+
+-- LOAD LANGUAGE SPECIFIC PLUGIN
+require "plugin.render-markdown"

@@ -5,6 +5,7 @@ local servers = {
 	"jsonls",
 	"pyright",
 	"clangd",
+	"marksman",
 }
 
 local settings = {
