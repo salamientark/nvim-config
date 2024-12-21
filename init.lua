@@ -11,6 +11,10 @@ Plug ("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesi
 Plug ('numToStr/Comment.nvim') -- Fast comment
 Plug ('akinsho/bufferline.nvim', { ['tag'] = '*' }) -- Bufferline
 Plug ("folke/which-key.nvim") -- Which-key
+Plug ('kevinhwang91/promise-async') -- nvim UFO dependencies
+Plug ('kevinhwang91/nvim-ufo') -- nvim UFO
+
+-- COPILOT
 Plug ('github/copilot.vim') -- copilot
 -- Plug ('zbirenbaum/copilot.lua') -- Copilot lua
 Plug ('CopilotC-Nvim/CopilotChat.nvim', { ['branch']= 'canary' }) -- Copilot chat
@@ -72,8 +76,9 @@ require "plugin.nvim-tree"
 require "plugin.autopairs"
 require "plugin.comment"
 require "plugin.bufferline"
-require "plugin.copilot"
 require "plugin.42Header"
+require "plugin.copilot"
+require "plugin.ufo"
 
 -- LOAD LSP
 require "plugin.lsp"

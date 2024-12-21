@@ -75,6 +75,10 @@ keymap("n", "<S-h>", ":bprev<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 
 -- Navigate tabs
-keymap("n", "<C-n>", ":tabnext<CR>", opts);
-keymap("n", "<C-b>", ":tabprevious<CR>", opts);
+keymap("n", "<C-t>", ":tabnext<CR>", opts);
+keymap("n", "<C-T>", ":tabprevious<CR>", opts);
 
+
+-- UFO
+keymap('n', 'zR', "<cmd> lua require('ufo').openAllFolds()<CR>", opts);
+keymap('n', 'zM', "<cmd> lua require('ufo').closeAllFolds()<CR>", opts);

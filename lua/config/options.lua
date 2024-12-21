@@ -37,4 +37,10 @@ vim.opt.updatetime = 300		-- faster completion (4000ms default)
 vim.opt.wrap = false			-- display lines as one long line
 vim.opt.writebackup = false		-- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 
+-- nvim.UFO config
+vim.o.foldcolumn = '1' -- '0' is not bad
+vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+
 -- vim.opt.shortmess:append "c"		-- Don't know what it does
