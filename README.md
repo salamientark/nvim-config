@@ -1,9 +1,25 @@
 # Nvim config
+My nvim config
 
 ## Install
-1. Download NeoVim
-2. Clone the repo
-3. Create an nvim config dir
-```mkdir ~/.config/nvim```
-4. Copy the repo in the config dir
-## Notes
+Run
+```
+rm -rf ~/.config/nvim
+git clone git@github.com:salamientark/nvim-config.git ~/.config/nvim
+cd ~/.config/nvim
+./install.sh
+rm install.sh
+```
+### Notes
+When starting nvim for the first time run
+```
+:PlugInstall
+```
+To install Plugin.
+Then run
+```
+:Mason
+```
+To install Language
+
+## Configuration
