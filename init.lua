@@ -17,7 +17,7 @@ Plug ('kevinhwang91/nvim-ufo') -- nvim UFO
 -- COPILOT
 Plug ('github/copilot.vim') -- copilot
 -- Plug ('zbirenbaum/copilot.lua') -- Copilot lua
-Plug ('CopilotC-Nvim/CopilotChat.nvim', { ['branch']= 'canary' }) -- Copilot chat
+Plug ('CopilotC-Nvim/CopilotChat.nvim', { ['branch']= 'main' }) -- Copilot chat
 
 -- COLOR SCHEME 
 Plug ('nordtheme/vim')				-- Nord
