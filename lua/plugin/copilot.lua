@@ -101,8 +101,8 @@ chat.setup {
       insert = '<C-c>'
     },
     reset = {
-      normal ='<C-l>',
-      insert = '<C-l>'
+      normal ='<C-R>',
+      insert = '<C-R>'
     },
     submit_prompt = {
       normal = '<CR>',
@@ -118,10 +118,10 @@ chat.setup {
     show_diff = {
       normal = 'gd'
     },
-    show_system_prompt = {
+    show_info = {
       normal = 'gp'
     },
-    show_user_selection = {
+    show_context = {
       normal = 'gs'
     },
   },
