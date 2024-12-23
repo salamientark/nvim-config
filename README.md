@@ -23,3 +23,7 @@ Then run
 To install Language
 
 ## Configuration
+Setup copilot
+```
+:Copilot setup
+```
