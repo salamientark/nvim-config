@@ -3,9 +3,14 @@ if not status_ok then
 	return
 end
 
+local status_ok_cmp, copilot_cmp = pcall(require, "copilot_cmp")
+if not status_ok_cmp then
+	return
+end
+
 copilot.setup({
   panel = {
-    enabled = true,
+    enabled = false,
     auto_refresh = false,
     keymap = {
       jump_prev = "[[",
@@ -20,7 +25,7 @@ copilot.setup({
     },
   },
   suggestion = {
-    enabled = true,
+    enabled = false,
     auto_trigger = false,
     hide_during_completion = true,
     debounce = 75,
@@ -47,3 +52,5 @@ copilot.setup({
   copilot_node_command = 'node', -- Node.js version must be > 18.x
   server_opts_overrides = {},
 })
+
+copilot_cmp.setup({})

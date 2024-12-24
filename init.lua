@@ -15,6 +15,7 @@ Plug ('kevinhwang91/promise-async') -- nvim UFO dependencies
 Plug ('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && npx --yes yarn install' })
 -- COPILOT
 Plug ('zbirenbaum/copilot.lua') -- Copilot lua
+Plug ('zbirenbaum/copilot-cmp') -- Copilot-cmp
 Plug ('CopilotC-Nvim/CopilotChat.nvim', { ['branch']= 'main' }) -- Copilot chat
 
 -- COLOR SCHEME 
@@ -57,7 +58,6 @@ require "config.keymaps"
 
 -- LOAD PLUGINS
 require "plugin.treesitter"
-require "plugin.cmp"
 require "plugin.telescope"
 require "plugin.nvim-tree"
 require "plugin.autopairs"
@@ -66,6 +66,7 @@ require "plugin.bufferline"
 require "plugin.42Header"
 require "plugin.copilot"
 require "plugin.copilot-chat"
+require "plugin.cmp"
 
 -- LOAD LSP
 require "plugin.lsp"

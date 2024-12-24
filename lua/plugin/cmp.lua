@@ -46,6 +46,7 @@ local kind_icons = {
 	Event = "",
 	Operator = "",
 	TypeParameter = "󰉺",
+	Copilot = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -105,6 +106,7 @@ cmp.setup {
 			vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
 			-- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
 			vim_item.menu = ({
+				copilot = "[LLM]",
 				nvim_lsp = "[LSP]",
 				luasnip = "[Snippet]",
 				buffer = "[Buffer]",
@@ -114,10 +116,13 @@ cmp.setup {
 		end,
 	},
 	sources = {
-		{ name = "nvim_lsp" },
-		{ name = "luasnip" },
-		{ name = "buffer" },
-		{ name = "path" },
+		-- Copilot source
+		{ name = "copilot", group_index = 2 },
+		-- Other sources
+		{ name = "nvim_lsp", group_index = 2 },
+		{ name = "luasnip", group_index = 2 },
+		{ name = "buffer", group_index = 2 },
+		{ name = "path", group_index = 2 },
 	},
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
