@@ -4,5 +4,5 @@ if not status_ok then
 end
 
 onedark.setup{
-	style = 'darker', -- 'dark' | 'darker' | 'cool' | 'deep' | 'warm' | 'warmer'
+	style = 'deep', -- 'dark' | 'darker' | 'cool' | 'deep' | 'warm' | 'warmer'
 }
