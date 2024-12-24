@@ -14,8 +14,7 @@ Plug ("folke/which-key.nvim") -- Which-key
 Plug ('kevinhwang91/promise-async') -- nvim UFO dependencies
 Plug ('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && npx --yes yarn install' })
 -- COPILOT
-Plug ('github/copilot.vim') -- copilot
--- Plug ('zbirenbaum/copilot.lua') -- Copilot lua
+Plug ('zbirenbaum/copilot.lua') -- Copilot lua
 Plug ('CopilotC-Nvim/CopilotChat.nvim', { ['branch']= 'main' }) -- Copilot chat
 
 -- COLOR SCHEME 
@@ -48,13 +47,13 @@ Plug ('nvim-tree/nvim-tree.lua')	-- Nvim-tree explorer
 
 vim.call('plug#end')
 
+-- colorscheme
+require "plugin.onedark"
+
 -- LOAD USER CONFIGURATION
 require "config.options"
 require "config.colorscheme"
 require "config.keymaps"
-
--- colorscheme
-require "plugin.onedark"
 
 -- LOAD PLUGINS
 require "plugin.treesitter"
@@ -66,6 +65,7 @@ require "plugin.comment"
 require "plugin.bufferline"
 require "plugin.42Header"
 require "plugin.copilot"
+require "plugin.copilot-chat"
 
 -- LOAD LSP
 require "plugin.lsp"
