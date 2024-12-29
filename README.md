@@ -1,11 +1,30 @@
-# Personnal Dotfiles
+# Nvim config
+My nvim config
 
-## Config Linux (Ubuntu)
-- font
-- picom
-- i3
-- i3blocks
-- zsh
-- alacritty
-- p10k
-- nvim
+## Install
+Run
+```
+rm -rf ~/.config/nvim
+git clone git@github.com:salamientark/nvim-config.git ~/.config/nvim
+cd ~/.config/nvim
+./install.sh
+rm install.sh
+```
+### Notes
+When starting nvim for the first time run
+```
+:PlugInstall
+```
+To install Plugin.
+Then run
+```
+:Mason
+```
+To install Language
+
+## Configuration
+Setup copilot
+```
+:Copilot setup
+```
+
