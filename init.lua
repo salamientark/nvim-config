@@ -13,6 +13,7 @@ Plug ('akinsho/bufferline.nvim', { ['tag'] = '*' }) -- Bufferline
 Plug ("folke/which-key.nvim") -- Which-key
 Plug ('kevinhwang91/promise-async') -- nvim UFO dependencies
 Plug ('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && npx --yes yarn install' })
+Plug ('norcalli/nvim-colorizer.lua')
 -- COPILOT
 Plug ('zbirenbaum/copilot.lua') -- Copilot lua
 Plug ('zbirenbaum/copilot-cmp') -- Copilot-cmp
@@ -46,6 +47,10 @@ Plug ('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })	-- Telescope
 Plug ('nvim-tree/nvim-web-devicons') -- optional
 Plug ('nvim-tree/nvim-tree.lua')	-- Nvim-tree explorer
 
+-- UFO (Folding)
+Plug ('kevinhwang91/nvim-ufo') -- UFO Fold
+Plug ('kevinhwang91/promise-async') -- UFO dependencies
+
 vim.call('plug#end')
 
 -- colorscheme
@@ -67,6 +72,7 @@ require "plugin.42Header"
 require "plugin.copilot"
 require "plugin.copilot-chat"
 require "plugin.cmp"
+require "plugin.ufo"
 
 -- LOAD LSP
 require "plugin.lsp"
